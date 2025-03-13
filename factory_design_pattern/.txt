@@ -1,0 +1,24 @@
+🛠 Factory Method Design Pattern
+📌 What is the Factory Method Pattern?
+The Factory Method Pattern is a creational design pattern that provides an interface for object creation in a superclass but allows subclasses to alter the type of objects that will be created.
+
+It encapsulates the object creation logic, ensuring that the client code remains decoupled from the exact class of objects being instantiated.
+
+📝 When to Use?
+Use the Factory Method Pattern when:
+
+✅ The exact class of the object is unknown at compile time.
+✅ The client code needs to be decoupled from the concrete classes it creates.
+✅ There’s a need for flexibility in object creation, allowing subclasses to modify the process.
+✅ The application follows the Open/Closed Principle (open for extension, closed for modification).
+
+💡 Advantages
+✔️ Loose Coupling → The client code is independent of object creation logic.
+✔️ Centralized Object Creation → Easier maintenance & testing.
+✔️ Scalability & Flexibility → Adding new product types is simple without modifying existing code.
+✔️ Code Reusability → Common creation logic is defined in superclass methods.
+
+⚠️ Disadvantages
+❌ Increased Complexity → Multiple factory classes might be needed.
+❌ Explosion of Subclasses → Too many subclasses may make code harder to manage.
+❌ Potential Runtime Errors → If factory methods are not properly implemen

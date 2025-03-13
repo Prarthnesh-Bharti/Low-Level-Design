@@ -1,0 +1,31 @@
+🔗 Singleton Design Pattern
+
+📌 What is the Singleton Pattern?
+The Singleton Design Pattern is a creational design pattern that ensures a class has only one instance and provides a global access point to that instance.
+
+It restricts multiple instantiations of a class, making it useful for managing shared resources, configuration settings, and global states in a controlled manner.
+
+📌 Forms of Singleton Instantiation
+1️⃣ Early Instantiation (Eager Initialization)
+✔ The instance is created at the time of class loading or application startup.
+✔ Ensures readiness but may lead to unnecessary resource allocation if the instance isn’t used.
+
+2️⃣ Lazy Instantiation
+✔ The instance is created only when first requested, preventing unnecessary resource usage.
+✔ Can be implemented using:
+
+Double-Checked Locking
+Initialization-on-Demand Holder Idiom
+💡 Advantages of Singleton
+✅ Global Access → Single instance accessible from anywhere in the application.
+✅ Efficient Resource Management → Avoids duplicate objects for shared resources.
+✅ Controlled Instantiation → Prevents inconsistent states and redundant objects.
+✅ Lazy Loading → Saves memory and improves performance when the instance is created only when needed.
+
+🚀 Common Use Cases
+📌 Configuration Management → Manage app-wide settings in a single instance.
+📌 Database Connections → Maintain a single connection pool.
+📌 Logging → Ensure consistent logging with a single logger instance.
+📌 Caching → Store frequently accessed data efficiently.
+📌 Thread Pooling → Manage tasks in a controlled, centralized thread pool.
+
