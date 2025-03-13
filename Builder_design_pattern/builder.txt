@@ -1,0 +1,15 @@
+The Builder design pattern is a creational pattern that is widely used in object-oriented programming to construct complex objects step by step. This pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations
+
+The Builder pattern involves the following key components:
+
+🔹 Product — The complex object that needs to be created. It often has numerous optional parameters.
+🔹 Builder — This interface defines the steps to construct the product. Each step is typically represented by a method in the interface.
+🔹 ConcreteBuilder — This class implements the Builder interface and provides specific implementations for each step of the construction process.
+🔹 Director — This class orchestrates the construction process by invoking the methods on the builder interface. It is not required but helps provide a more fluent and consistent way to construct objects.
+🔹 Client — The client is responsible for creating the director and configuring it with a specific concrete builder to construct the product.
+
+// in this codebase
+Product: The Desktop class represents the complex object being built.
+Builder: The DesktopBuilder class is an abstract base class, with concrete builders like DellDesktopbuilder and hpDesktopbuilder implementing the methods to set specific components.
+Director: The DesktopDirector class orchestrates the building process, calling the builder methods in the correct order.
+Client: The main.cpp file creates the builders and directors, triggering the construction process and displaying the final product specifications
